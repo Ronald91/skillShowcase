@@ -1,0 +1,11 @@
+{
+    "appName": "skillshowcase",
+    "roleName": "pinpointLambdaRole38214d74",
+    "cloudWatchPolicyName": "cloudWatchPolicy38214d74",
+    "pinpointPolicyName": "pinpointPolicy38214d74",
+    "authPolicyName": "pinpoint_amplify_38214d74",
+    "unauthPolicyName": "pinpoint_amplify_38214d74",
+    "authRoleName": "skillhowcase-20181203114846-authRole",
+    "unauthRoleName": "skillhowcase-20181203114846-unauthRole",
+    "IAMPrefix": "139485626645"
+}

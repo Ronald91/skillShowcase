@@ -1,0 +1,65 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "skillhowcase-20181203114846-authRole",
+			"UnauthRoleArn": "arn:aws:iam::139485626645:role/skillhowcase-20181203114846-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::139485626645:role/skillhowcase-20181203114846-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "skillhowcase-20181203114846-deployment",
+			"UnauthRoleName": "skillhowcase-20181203114846-unauthRole",
+			"StackName": "skillhowcase-20181203114846",
+			"StackId": "arn:aws:cloudformation:us-east-1:139485626645:stack/skillhowcase-20181203114846/4dd284e0-f71b-11e8-b07c-500c28b32ed2"
+		}
+	},
+	"auth": {
+		"cognito6a6b5aba": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/skillhowcase-20181203114846-deployment/amplify-cfn-templates/auth/cognito6a6b5aba-cloudformation-template.yml",
+				"logicalId": "authcognito6a6b5aba"
+			},
+			"lastPushTimeStamp": "2018-12-03T17:11:29.665Z",
+			"output": {
+				"IdentityPoolId": "us-east-1:9699d357-ff6c-41de-983c-60019acc398e",
+				"IdentityPoolName": "skillshowcase_identitypool_dcf78481"
+			},
+			"lastPushDirHash": "xBvqrdzZ4zRvrUNnDsptj9R7lOk="
+		}
+	},
+	"analytics": {
+		"skillshowcase": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/skillhowcase-20181203114846-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+				"logicalId": "analyticsskillshowcase"
+			},
+			"lastPushTimeStamp": "2018-12-03T17:11:29.667Z",
+			"output": {
+				"appName": "skillshowcase",
+				"Region": "us-east-1",
+				"Id": "3264c5c6e71644418092883344d93f5d"
+			},
+			"lastPushDirHash": "DNYaD4d1t1zKd893rYZQQ/39kbs="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/skillhowcase-20181203114846-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-12-03T17:11:29.671Z",
+			"output": {
+				"S3BucketSecureURL": "https://skillshowcase--hosting-bucket.s3.amazonaws.com",
+				"WebsiteURL": "http://skillshowcase--hosting-bucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "skillshowcase--hosting-bucket"
+			},
+			"lastPushDirHash": "nNbNQdPgLU9hJo53f4ahAZozTGw="
+		}
+	}
+}

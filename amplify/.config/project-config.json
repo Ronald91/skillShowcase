@@ -1,0 +1,20 @@
+{
+    "projectName": "skillShowcase",
+    "projectPath": "C:\\projects\\skillShowcase",
+    "defaultEditor": "code",
+    "frontendHandler": {
+        "javascript": "C:\\Users\\aslte\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "angular",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "dist/skillShowcase",
+            "BuildCommand": "npm.cmd run-script build",
+            "StartCommand": "npm.cmd run-script start"
+        }
+    },
+    "providers": {
+        "awscloudformation": "C:\\Users\\aslte\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-provider-awscloudformation"
+    }
+}
