@@ -9,6 +9,8 @@ import { SkillComponent } from "./skill/skill.component";
 import { SkillsListComponent } from "./skills-list/skills-list.component";
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, SkillComponent, SkillsListComponent],
@@ -22,7 +24,9 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    LayoutModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [AmplifyService],
   bootstrap: [AppComponent]

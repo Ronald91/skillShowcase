@@ -1,0 +1,116 @@
+type Skill {
+  id: ID!
+  name: String!
+  description: String
+  url: String
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelSkillConnection {
+  items: [Skill]
+  nextToken: String
+}
+
+input ModelStringFilterInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+}
+
+input ModelIDFilterInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+}
+
+input ModelIntFilterInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  contains: Int
+  notContains: Int
+  between: [Int]
+}
+
+input ModelFloatFilterInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  contains: Float
+  notContains: Float
+  between: [Float]
+}
+
+input ModelBooleanFilterInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelSkillFilterInput {
+  id: ModelIDFilterInput
+  name: ModelStringFilterInput
+  description: ModelStringFilterInput
+  url: ModelStringFilterInput
+  and: [ModelSkillFilterInput]
+  or: [ModelSkillFilterInput]
+  not: ModelSkillFilterInput
+}
+
+type Query {
+  getSkill(id: ID!): Skill
+  listSkills(filter: ModelSkillFilterInput, limit: Int, nextToken: String): ModelSkillConnection
+}
+
+input CreateSkillInput {
+  id: ID
+  name: String!
+  description: String
+  url: String
+}
+
+input UpdateSkillInput {
+  id: ID!
+  name: String
+  description: String
+  url: String
+}
+
+input DeleteSkillInput {
+  id: ID
+}
+
+type Mutation {
+  createSkill(input: CreateSkillInput!): Skill
+  updateSkill(input: UpdateSkillInput!): Skill
+  deleteSkill(input: DeleteSkillInput!): Skill
+}
+
+type Subscription {
+  onCreateSkill: Skill @aws_subscribe(mutations: ["createSkill"])
+  onUpdateSkill: Skill @aws_subscribe(mutations: ["updateSkill"])
+  onDeleteSkill: Skill @aws_subscribe(mutations: ["deleteSkill"])
+}

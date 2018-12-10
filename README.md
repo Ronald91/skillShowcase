@@ -1,12 +1,13 @@
 ## SkillShowcase
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0 with routing and angular/material added through the CLI. It is a demo project utilizing AWS Amplify (auth, hosting, api{graphql})
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0 with routing and angular/material added through the CLI. It is a demo project utilizing [AWS Amplify](https://aws-amplify.github.io/docs/) (auth, hosting, api{graphql})
 
 ## Installation and running
 -   From the project root run npm install
+-   amplify configure 
 -   amplify publish
 
 ## Demo
-Live App Demo: <https://bparch.github.io/bp-todo-ui/>
+[Live App Demo](http://skillshowcase--hosting-bucket.s3-website-us-east-1.amazonaws.com)
 
 ## Development server
 

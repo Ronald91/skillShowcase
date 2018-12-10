@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "skillShowcaseApi",
+    "schemaGraphql": "s3://skillhowcase-20181203114846-deployment/amplify-appsync-files/schema.graphql.1544461960637",
+    "ResolverBucket": "skillhowcase-20181203114846-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1544461960637"
+}

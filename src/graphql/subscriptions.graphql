@@ -1,0 +1,25 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateSkill {
+  onCreateSkill {
+    id
+    name
+    description
+    url
+  }
+}
+subscription OnUpdateSkill {
+  onUpdateSkill {
+    id
+    name
+    description
+    url
+  }
+}
+subscription OnDeleteSkill {
+  onDeleteSkill {
+    id
+    name
+    description
+    url
+  }
+}

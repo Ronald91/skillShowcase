@@ -8,7 +8,11 @@ const awsmobile =  {
     "aws_mobile_analytics_app_region": "us-east-1",
     "aws_content_delivery_bucket": "skillshowcase--hosting-bucket",
     "aws_content_delivery_bucket_region": "us-east-1",
-    "aws_content_delivery_url": "http://skillshowcase--hosting-bucket.s3-website-us-east-1.amazonaws.com"
+    "aws_content_delivery_url": "http://skillshowcase--hosting-bucket.s3-website-us-east-1.amazonaws.com",
+    "aws_appsync_graphqlEndpoint": "https://47wjbccd25f7roljbz73r3uyj4.appsync-api.us-east-1.amazonaws.com/graphql",
+    "aws_appsync_region": "us-east-1",
+    "aws_appsync_authenticationType": "API_KEY",
+    "aws_appsync_apiKey": "da2-sxqp4ckcqnairejt7qigoru5ua"
 };
 
 

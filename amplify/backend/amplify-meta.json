@@ -19,7 +19,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/skillhowcase-20181203114846-deployment/amplify-cfn-templates/auth/cognito6a6b5aba-cloudformation-template.yml",
 				"logicalId": "authcognito6a6b5aba"
 			},
-			"lastPushTimeStamp": "2018-12-03T17:11:29.665Z",
+			"lastPushTimeStamp": "2018-12-10T17:16:11.491Z",
 			"output": {
 				"IdentityPoolId": "us-east-1:9699d357-ff6c-41de-983c-60019acc398e",
 				"IdentityPoolName": "skillshowcase_identitypool_dcf78481"
@@ -35,7 +35,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/skillhowcase-20181203114846-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
 				"logicalId": "analyticsskillshowcase"
 			},
-			"lastPushTimeStamp": "2018-12-03T17:11:29.667Z",
+			"lastPushTimeStamp": "2018-12-10T17:16:11.493Z",
 			"output": {
 				"appName": "skillshowcase",
 				"Region": "us-east-1",
@@ -52,7 +52,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/skillhowcase-20181203114846-deployment/amplify-cfn-templates/hosting/template.json",
 				"logicalId": "hostingS3AndCloudFront"
 			},
-			"lastPushTimeStamp": "2018-12-03T17:11:29.671Z",
+			"lastPushTimeStamp": "2018-12-10T17:16:11.495Z",
 			"output": {
 				"S3BucketSecureURL": "https://skillshowcase--hosting-bucket.s3.amazonaws.com",
 				"WebsiteURL": "http://skillshowcase--hosting-bucket.s3-website-us-east-1.amazonaws.com",
@@ -60,6 +60,24 @@
 				"HostingBucketName": "skillshowcase--hosting-bucket"
 			},
 			"lastPushDirHash": "nNbNQdPgLU9hJo53f4ahAZozTGw="
+		}
+	},
+	"api": {
+		"skillShowcaseApi": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "qa7qru2a6beivnws3e7tvyrhe4",
+				"GraphQLAPIEndpointOutput": "https://47wjbccd25f7roljbz73r3uyj4.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-sxqp4ckcqnairejt7qigoru5ua"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/skillhowcase-20181203114846-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiskillShowcaseApi"
+			},
+			"lastPushTimeStamp": "2018-12-10T17:16:13.608Z",
+			"lastPushDirHash": "CgKCzNdDTg8/pVcATzVLHuXDEjY="
 		}
 	}
 }
